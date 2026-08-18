@@ -1,0 +1,70 @@
+/* ライトモード用スタイルのオーバライド設定 */
+body:not(.dark) {
+    background-color: #f8fafc;
+    color: #0f172a;
+}
+
+body:not(.dark) header,
+body:not(.dark) .bg-darkcard {
+    background-color: #ffffff;
+    border-color: #e2e8f0;
+}
+
+body:not(.dark) .bg-darkborder {
+    background-color: #e2e8f0;
+}
+
+body:not(.dark) textarea {
+    background-color: #ffffff;
+    color: #0f172a;
+    border-color: #cbd5e1;
+}
+
+body:not(.dark) textarea:focus {
+    border-color: #3b82f6;
+}
+
+body:not(.dark) .bg-gray-900\/50 {
+    background-color: #f1f5f9;
+    border-color: #e2e8f0;
+}
+
+body:not(.dark) .bg-gray-800 {
+    background-color: #f1f5f9;
+    color: #334155;
+    border-color: #cbd5e1;
+}
+
+body:not(.dark) .bg-gray-800:hover {
+    background-color: #e2e8f0;
+}
+
+body:not(.dark) .text-gray-400 {
+    color: #64748b;
+}
+
+body:not(.dark) .text-gray-300 {
+    color: #334155;
+}
+
+body:not(.dark) .text-gray-200 {
+    color: #1e293b;
+}
+
+/* スクロールバー調整 */
+textarea::-webkit-scrollbar {
+    width: 8px;
+}
+
+textarea::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+}
+
+body:not(.dark) textarea::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+}
