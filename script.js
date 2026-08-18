@@ -161,18 +161,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 5. テーマ切替 (ダークモード / ライトモード)
     function initTheme() {
-        const savedTheme = localStorage.getItem(THEME_KEY) || 'dark';
+        const savedTheme = localStorage.getItem(THEME_KEY) || 'dark'; // デフォルトはダークモード
         if (savedTheme === 'dark') {
-            document.documentElement.classList.add('dark');
+            document.body.classList.add('dark');
             themeIcon.className = 'fa-solid fa-sun';
         } else {
-            document.documentElement.classList.remove('dark');
+            document.body.classList.remove('dark');
             themeIcon.className = 'fa-solid fa-moon';
         }
     }
 
     themeToggleBtn.addEventListener('click', () => {
-        const isDark = document.documentElement.classList.toggle('dark');
+        const isDark = document.body.classList.toggle('dark');
         localStorage.setItem(THEME_KEY, isDark ? 'dark' : 'light');
         themeIcon.className = isDark ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
     });

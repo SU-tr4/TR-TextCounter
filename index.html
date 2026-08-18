@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja" class="dark">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-darkbg text-gray-100 min-h-screen font-sans flex flex-col">
+<body class="bg-darkbg text-gray-100 min-h-screen font-sans flex flex-col dark">
 
     <!-- ヘッダー -->
     <header class="border-b border-darkborder bg-darkcard px-6 py-4 flex justify-between items-center">
@@ -32,6 +32,9 @@
             <i class="fa-solid me-2 fa-calculator text-blue-500"></i>テキストカウンター
         </h1>
         <div class="flex items-center gap-3">
+            <a id="githubLink" href="https://github.com/SU-tr4/TR-TextCounter" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-gray-800 hover:bg-gray-700 text-gray-300 transition-colors" title="GitHubリポジトリ">
+                <i class="fa-brands fa-github"></i>
+            </a>
             <button id="themeToggleBtn" class="p-2 rounded-lg bg-gray-800 hover:bg-gray-700 text-gray-300 transition-colors" title="テーマ切り替え">
                 <i class="fa-solid fa-moon" id="themeIcon"></i>
             </button>
