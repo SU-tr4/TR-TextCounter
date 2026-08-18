@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateCounts() {
         const text = inputText.value;
 
-        // 全文字数 (改行除くなどの調整可、ここでは入力そのまま)
+        // 全文字数
         const totalChars = text.length;
 
         // スペース・改行を除外した文字数
